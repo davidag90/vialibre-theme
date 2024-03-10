@@ -1,0 +1,256 @@
+// Add your own code here!
+// Because this file is compiled after Bootstrap, you're also able to use Bootstrap mixins for better code.
+// Some examples can be found here: https://bootscore.me/documentation/bootstrap-css-sass
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/montserrat-v18-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../../fonts/montserrat-v18-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../../fonts/montserrat-v18-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../fonts/montserrat-v18-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../../fonts/montserrat-v18-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../fonts/montserrat-v18-latin-regular.svg#Montserrat")
+      format("svg"); /* Legacy iOS */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../fonts/montserrat-v18-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../../fonts/montserrat-v18-latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../../fonts/montserrat-v18-latin-700.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../../fonts/montserrat-v18-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../../fonts/montserrat-v18-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../fonts/montserrat-v18-latin-700.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+
+/* exo-regular - latin */
+@font-face {
+  font-family: "Exo";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/exo-v15-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../../fonts/exo-v15-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../../fonts/exo-v15-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../../fonts/exo-v15-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../../fonts/exo-v15-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../../fonts/exo-v15-latin-regular.svg#Exo")
+      format("svg"); /* Legacy iOS */
+}
+/* exo-600 - latin */
+@font-face {
+  font-family: "Exo";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../fonts/exo-v15-latin-600.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../../fonts/exo-v15-latin-600.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../../fonts/exo-v15-latin-600.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../../fonts/exo-v15-latin-600.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../../fonts/exo-v15-latin-600.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../../fonts/exo-v15-latin-600.svg#Exo")
+      format("svg"); /* Legacy iOS */
+}
+
+/* Custom CSS */
+
+// Owl Carousel
+
+:root {
+  --main-white-color: white;
+  --main-black-color: black;
+}
+
+.static {
+  position: static;
+}
+
+.cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.owl-carousel .owl-slide {
+  position: relative;
+  height: calc(100vh - 69px);
+  background-color: lightgray;
+}
+
+.owl-carousel .owl-slide-animated {
+  transform: translateX(20px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.05s;
+}
+
+.owl-carousel .owl-slide-animated.is-transitioned {
+  transform: none;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s;
+}
+
+.owl-carousel .owl-slide-title.is-transitioned {
+  transition-delay: 0.2s;
+}
+
+.owl-carousel .owl-slide-subtitle.is-transitioned {
+  transition-delay: 0.35s;
+}
+
+.owl-carousel .owl-slide-cta.is-transitioned {
+  transition-delay: 0.5s;
+}
+
+.owl-carousel .owl-slide-text {
+  text-shadow: 0 0 18px rgba(0, 0, 0, 1), 0 0 6px rgba(0, 0, 0, 0.9),
+    0 0 3px rgba(0, 0, 0, 0.75);
+}
+
+.owl-carousel .owl-dots .owl-dot span {
+  background: transparent;
+  border: 1px solid var(--main-black-color);
+  transition: all 0.2s ease;
+}
+
+.owl-carousel .owl-dots .owl-dot:hover span,
+.owl-carousel .owl-dots .owl-dot.active span {
+  background: var(--main-black-color);
+}
+
+.owl-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-100%);
+  margin: 0 !important;
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.owl-carousel .owl-nav svg:hover {
+  filter: drop-shadow(0px 0px 6px rgb(0 0 0 / 0.6));
+}
+
+.owl-carousel .owl-nav .owl-prev {
+  float: left;
+}
+
+.owl-carousel .owl-nav .owl-next {
+  float: right;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: none !important;
+}
+
+// Owl Carousel
+
+img.logo.md,
+img.logo.xs {
+  height: 44px;
+}
+
+#page {
+  padding-top: 69px;
+}
+
+#lema {
+  font-size: 1.75rem;
+  font-style: italic;
+  font-family: "Exo", sans-serif;
+}
+
+@include media-breakpoint-up(md) {
+  #lema {
+    font-size: 2rem;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  #lema {
+    font-size: 2.5rem;
+  }
+}
+
+#somos-via-libre {
+  background-color: $gray-800;
+}
+
+#logos-turismo > figure {
+  max-width: 80px;
+}
+
+#video-canessa {
+  max-width: 240px;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header.entry-header.featured-full-width-img
+  > div.entry-header
+  > .post-header-wrapper {
+  -moz-text-shadow: 0 0 12px #333;
+  -webkit-text-shadow: 0 0 12px #333;
+  text-shadow: 0 0 12px #333;
+}
+
+#float-whatsapp {
+  bottom: 30px;
+  left: 5%;
+  z-index: 999999;
+}
+
+#float-whatsapp > a {
+  display: block;
+  height: auto;
+  width: 45px;
+}
+
+.bg-highlight {
+  background-color: $gray-600;
+}
+
+.separador > a {
+  background-color: $gray-900 !important;
+  color: #fff !important;
+  cursor: default;
+}
+
+.widget-title {
+  color: $secondary;
+}
+
+.wp-block-embed-youtube > .wp-block-embed__wrapper > iframe {
+  width: 100% !important;
+}
+
+.navbar-nav > .menu-item > .dropdown-menu > .menu-item > .dropdown-item.active,
+.navbar-nav > .menu-item > .dropdown-menu > .menu-item > .dropdown-item:active {
+  background-color: $secondary !important;
+  color: $dark !important;
+}

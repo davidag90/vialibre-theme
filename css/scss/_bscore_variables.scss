@@ -1,0 +1,14 @@
+// In this file you can override the default variables of Bootstrap
+// Do you want primary to be green? Just add "$primary: #00FF00;" to this file and the theme will automatically compile the scss for you.
+
+// Colors
+$secondary:					#F5E61E;
+
+// Fonts
+$line-height-base:			1.75;
+$font-family-sans-serif:    'Montserrat', sans-serif !default;
+
+// Headings & display
+$headings-font-weight:      600 !default;
+$display-font-weight:       $headings-font-weight;
+$headings-font-family:		'Exo', sans-serif !default;
