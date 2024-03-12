@@ -214,9 +214,33 @@ img.logo.xs {
 header.entry-header.featured-full-width-img
   > div.entry-header
   > .post-header-wrapper {
-  -moz-text-shadow: 1px 1px 6px black;
-  -webkit-text-shadow: 1px 1px 6px black;
-  text-shadow: 1px 1px 6px black;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1rem 1rem 0;
+}
+
+header.entry-header.featured-full-width-img
+  > div.entry-header
+  > .post-header-wrapper
+  > .entry-title {
+  font-size: 1.35rem;
+}
+
+@include media-breakpoint-up(sm) {
+  header.entry-header.featured-full-width-img
+    > div.entry-header
+    > .post-header-wrapper
+    > .entry-title {
+    font-size: 1.5rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  header.entry-header.featured-full-width-img
+    > div.entry-header
+    > .post-header-wrapper
+    > .entry-title {
+    font-size: 2rem;
+  }
 }
 
 #float-whatsapp {
