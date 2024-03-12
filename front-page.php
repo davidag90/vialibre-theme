@@ -21,11 +21,10 @@
 						$c = 0;
 						while ($posts->have_posts()) : $posts->the_post(); ?>
 							<div class="owl-slide d-flex align-items-end cover" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full') ?>)">
-
 								<div class="container">
 									<div class="row justify-content-center justify-content-md-start">
 										<div class="col-12 col-md-6 static pb-5">
-											<div class="owl-slide-text mb-5 p-1 bg-dark bg-opacity-50">
+											<div class="owl-slide-text mb-5 p-2 bg-dark bg-opacity-50">
 												<h2 class="owl-slide-animated owl-slide-title mb-0">
 													<a class="text-decoration-none link-light" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 												</h2>

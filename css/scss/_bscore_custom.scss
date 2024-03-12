@@ -99,6 +99,10 @@
   background-color: lightgray;
 }
 
+.owl-carousel .owl-slide .owl-slide-subtitle > p {
+  margin-bottom: 0 !important;
+}
+
 .owl-carousel .owl-slide-animated {
   transform: translateX(20px);
   opacity: 0;
