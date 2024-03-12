@@ -235,6 +235,13 @@ header.entry-header.featured-full-width-img
 @include media-breakpoint-up(sm) {
   header.entry-header.featured-full-width-img
     > div.entry-header
+    > .post-header-wrapper {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1rem 1rem 0;
+  }
+
+  header.entry-header.featured-full-width-img
+    > div.entry-header
     > .post-header-wrapper
     > .entry-title {
     font-size: 1.5rem;
