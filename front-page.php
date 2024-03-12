@@ -25,12 +25,12 @@
 								<div class="container">
 									<div class="row justify-content-center justify-content-md-start">
 										<div class="col-12 col-md-6 static pb-5">
-											<div class="owl-slide-text pb-5">
+											<div class="owl-slide-text pb-5 bg-dark bg-opacity-50">
 												<h2 class="owl-slide-animated owl-slide-title mb-0">
 													<a class="text-decoration-none link-light" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 												</h2>
 
-												<div class="owl-slide-animated owl-slide-subtitle text-light pb-5">
+												<div class="owl-slide-animated owl-slide-subtitle text-light">
 													<?php the_excerpt(); ?>
 												</div>
 											</div><!-- .owl-slide-text -->
