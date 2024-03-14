@@ -19,7 +19,7 @@ get_header();
       <?php $thumb = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full'); ?>
       <header class="entry-header featured-full-width-img height-75 bg-dark text-light mb-5" style="background-image: url('<?php echo $thumb['0']; ?>'); background-position: center center;">
         <div class="w-100 h-100 d-flex align-items-end pb-5">
-          <div class="post-header-wrapper px-2 py-3 w-100 bg-dark bg-opacity-50">
+          <div class="post-header-wrapper px-2 py-3 w-100">
             <h1 class="entry-title p-0 m-0"><?php echo get_the_title(); ?></h1>
             <p class="entry-subtitle mb-0"><?php echo get_the_excerpt(); ?></p>
           </div><!-- .post-header-wrapper -->
