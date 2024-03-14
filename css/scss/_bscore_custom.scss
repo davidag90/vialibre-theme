@@ -173,24 +173,6 @@ img.logo.xs {
   padding-top: 69px;
 }
 
-#lema {
-  font-size: 1.75rem;
-  font-style: italic;
-  font-family: "Exo", sans-serif;
-}
-
-@include media-breakpoint-up(md) {
-  #lema {
-    font-size: 2rem;
-  }
-}
-
-@include media-breakpoint-up(xxl) {
-  #lema {
-    font-size: 2.5rem;
-  }
-}
-
 #somos-via-libre {
   background-color: $gray-800;
 }
@@ -247,4 +229,32 @@ header.entry-header.featured-full-width-img
   display: block;
   height: auto;
   width: 45px;
+}
+
+.entry-title {
+  font-size: 1.25rem;
+}
+
+.entry-subtitle {
+  font-size: 0.9rem;
+}
+
+@include media-breakpoint-up(md) {
+  .entry-title {
+    font-size: 1.75rem;
+  }
+
+  .entry-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .entry-title {
+    font-size: 2rem;
+  }
+
+  .entry-subtitle {
+    font-size: 1.25rem;
+  }
 }
