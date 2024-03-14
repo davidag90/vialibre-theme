@@ -172,7 +172,7 @@ img.logo.xs {
 #lema {
   font-size: 1.75rem;
   font-style: italic;
-  font-family: "Exo", sans-serif !default;
+  font-family: "Exo", sans-serif;
 }
 
 @include media-breakpoint-up(md) {
