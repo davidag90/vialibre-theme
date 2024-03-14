@@ -62,13 +62,29 @@
           <?php endif; ?>
         </div>
         <!-- Footer Widgets End -->
+
       </div>
+
+      <!-- Bootstrap 5 Nav Walker Footer Menu -->
+      <?php
+      wp_nav_menu(array(
+        'theme_location' => 'footer-menu',
+        'container' => false,
+        'menu_class' => '',
+        'fallback_cb' => '__return_false',
+        'items_wrap' => '<ul id="footer-menu" class="nav %2$s">%3$s</ul>',
+        'depth' => 1,
+        'walker' => new bootstrap_5_wp_nav_menu_walker()
+      ));
+      ?>
+      <!-- Bootstrap 5 Nav Walker Footer Menu End -->
+
     </div>
   </div>
 
   <div class="bootscore-info bg-light text-muted border-top py-2 text-center">
     <div class="container">
-      <small>&copy;&nbsp;<?php echo Date('Y'); ?> - Via Libre Trek & Climb ®</small>
+      <small>&copy;&nbsp;<?php echo Date('Y'); ?> - <?php bloginfo('name'); ?></small>
     </div>
   </div>
 
@@ -80,7 +96,7 @@
 
 </div><!-- #page -->
 
-<div id="float-whatsapp" class="position-fixed zi-1020">
+<div id="float-whatsapp" class="position-fixed">
   <a href="https://wa.me/5493548605433" target="_blank">
     <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/whatsapp.svg" alt="Hablar por WhatsApp">
   </a>

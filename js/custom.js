@@ -13,8 +13,8 @@ jQuery(function ($) {
         dots:               false,
         autoplayHoverPause: true,
         navText:            [
-                                '<svg xmlns="http://www.w3.org/2000/svg" height="3rem" viewBox="0 0 320 512"><style>svg{fill:#ffffff}</style><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>',
-                                '<svg xmlns="http://www.w3.org/2000/svg" height="3rem" viewBox="0 0 320 512"><style>svg{fill:#ffffff}</style><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>'
+                                '<svg id="arrow-left" width="50" height="50" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>',
+                                '<svg id="arrow-right" width="50" height="50" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>'
                             ]
     });
 
@@ -29,19 +29,12 @@ jQuery(function ($) {
     });
 
     // Add class link-light to footer menus
-    $('.footer_widget > div > ul > li > a').addClass('link-light');
+    $('#menu-cordoba > .menu-item > a').addClass('link-light');
+    $('#menu-alta-montana > .menu-item > a').addClass('link-light');
 
-    // Tratamiento de div ".list-group" para cumplir especificaciones Bootstrap
+    // Clase .list-group-item para sub-elementos de .list-group
     $('div.list-group').find('p').unwrap();
     $('div.list-group').find('a').unwrap();
     $('div.list-group').children('a').addClass('list-group-item list-group-item-action');
 
-    $('.wp-block-embed-youtube > div').addClass('ratio ratio-16x9');
-    
-    $('.btn.acceso-modal').each(function() {
-        var target = $(this).attr('href');
-        var content = $(this).html();
-        
-        $(this).replaceWith('<button class="btn btn-secondary w-100" data-bs-toggle="modal" data-bs-target="' + target + '" >' + content + '</button>'); 
-    });
 }); // jQuery End
