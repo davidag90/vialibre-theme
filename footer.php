@@ -90,20 +90,20 @@
 
 </footer>
 
-<div class="top-button position-fixed zi-1020">
-  <a href="#to-top" class="btn btn-primary shadow"><i class="fas fa-chevron-up"></i></a>
-</div>
+<div class="float-btn position-fixed zi-1020">
+  <div id="btn-go-top" class="me-2">
+    <a href="#to-top" class="btn btn-primary shadow"><i class="fas fa-chevron-up"></i></a>
+  </div>
+
+  <div id="btn-whatsapp">
+    <a href="https://wa.me/5493548605433" target="_blank">
+      <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/whatsapp.svg" alt="Hablar por WhatsApp">
+    </a>
+  </div>
+</div><!-- .float-btn -->
 
 </div><!-- #page -->
-
-<div id="float-whatsapp" class="position-fixed">
-  <a href="https://wa.me/5493548605433" target="_blank">
-    <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/whatsapp.svg" alt="Hablar por WhatsApp">
-  </a>
-</div>
-
 <?php wp_footer(); ?>
-
 </body>
 
 </html>

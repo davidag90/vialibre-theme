@@ -158,6 +158,10 @@
   float: right;
 }
 
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: none !important;
+}
+
 // Owl Carousel
 
 img.logo.md,
@@ -210,18 +214,6 @@ header.entry-header.featured-full-width-img
   text-shadow: 0 0 26px #333, 0 0 16px #555;
 }
 
-#float-whatsapp {
-  bottom: 30px;
-  left: 5%;
-  z-index: 999999;
-}
-
-#float-whatsapp > a {
-  display: block;
-  height: auto;
-  width: 45px;
-}
-
 .bg-highlight {
   background-color: $gray-600;
 }
@@ -233,4 +225,26 @@ header.entry-header.featured-full-width-img
 
 #detalle-guias > .col ul li {
   margin-bottom: 1rem;
+}
+
+.float-btn {
+  right: 5%;
+  bottom: 30px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.float-btn.visible {
+  opacity: 1;
+}
+
+#btn-whatsapp,
+#btn-go-top {
+  display: inline-block;
+}
+
+#btn-whatsapp > a {
+  display: block;
+  height: auto;
+  width: 45px;
 }
