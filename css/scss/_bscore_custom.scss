@@ -268,3 +268,19 @@ img.logo.xs {
   background-color: $secondary;
   color: $dark;
 }
+
+.footer_widget .menu .menu-item > a {
+  transition: all 350ms;
+}
+
+.footer_widget .menu .menu-item > a:link,
+.footer_widget .menu .menu-item > a:visited {
+  color: $light;
+  opacity: 0.75;
+}
+
+.footer_widget .menu .menu-item > a:hover,
+.footer_widget .menu .menu-item > a:active {
+  color: $secondary;
+  opacity: 1;
+}
