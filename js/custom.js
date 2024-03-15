@@ -24,9 +24,9 @@ jQuery(function ($) {
     $currentOwlItem.find(".owl-slide-animated").addClass("is-transitioned");
   });
 
-  /* $(window).load(function(){
-        $owlCarousel.trigger('play.owl.autoplay',[7500]);
-    }); */
+  $(window).load(function () {
+    $owlCarousel.trigger("play.owl.autoplay", [10000]);
+  });
 
   // Clase .list-group-item para sub-elementos de .list-group
   $("div.list-group").find("p").unwrap();
