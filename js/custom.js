@@ -28,10 +28,6 @@ jQuery(function ($) {
         $owlCarousel.trigger('play.owl.autoplay',[7500]);
     }); */
 
-  // Add class link-light to footer menus
-  $("#menu-cordoba > .menu-item > a").addClass("link-light");
-  $("#menu-alta-montana > .menu-item > a").addClass("link-light");
-
   // Clase .list-group-item para sub-elementos de .list-group
   $("div.list-group").find("p").unwrap();
   $("div.list-group").find("a").unwrap();
