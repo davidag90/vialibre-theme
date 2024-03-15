@@ -220,16 +220,16 @@ img.logo.xs {
 }
 
 .entry-title {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .entry-subtitle {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 @include media-breakpoint-up(sm) {
   .entry-title {
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
 
   .entry-subtitle {
@@ -243,7 +243,7 @@ img.logo.xs {
   }
 
   .entry-subtitle {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 }
 
