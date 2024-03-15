@@ -254,3 +254,17 @@ img.logo.xs {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7), 1px 1px 6px rgba(0, 0, 0, 0.8),
     1px 1px 12px rgba(0, 0, 0, 1);
 }
+
+.separador > a,
+.separador > a:hover,
+.separador:hover {
+  cursor: default;
+  text-decoration: none;
+  color: white;
+  background-color: $dark;
+}
+
+.dropdown-item.active {
+  background-color: $secondary;
+  color: $dark;
+}
