@@ -12,7 +12,8 @@
 						'post_type' => 'page',
 						'post_status' => 'publish',
 						'post_parent' => array('expediciones'),
-						'posts_per_page' => 3
+						'meta_key' => 'destacar-home',
+						'meta_value' => true
 					);
 
 					$posts = new WP_Query($args);
