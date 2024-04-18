@@ -35,8 +35,8 @@ jQuery(function ($) {
     .children("a")
     .addClass("list-group-item list-group-item-action");
 
-  // Botones flotantes
-  $(window).on("scroll", function () {
+  // Botones flotantes (descartado momentaneamente desde 18/4/2024)
+  /* $(window).on("scroll", function () {
     var scroll = $(window).scrollTop();
 
     if (scroll >= 500) {
@@ -44,5 +44,5 @@ jQuery(function ($) {
     } else {
       $(".float-btn").removeClass("visible");
     }
-  });
+  }); */
 }); // jQuery End
