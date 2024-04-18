@@ -200,12 +200,6 @@ img.logo.xs {
 .float-btn {
   right: 5%;
   bottom: 30px;
-  opacity: 0;
-  transition: opacity 1s;
-}
-
-.float-btn.visible {
-  opacity: 1;
 }
 
 #btn-whatsapp,
