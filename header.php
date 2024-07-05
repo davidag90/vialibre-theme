@@ -30,7 +30,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-    
+
   <?php wp_body_open(); ?>
 
   <div id="to-top"></div>
@@ -46,8 +46,7 @@
           <div class="container">
 
             <!-- Navbar Brand -->
-            <a class="navbar-brand xs d-md-none" href="<?php echo esc_url(home_url()); ?>"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo/logo-sm.png" alt="logo" class="logo xs"></a>
-            <a class="navbar-brand md d-none d-md-block" href="<?php echo esc_url(home_url()); ?>"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo/logo.png" alt="logo" class="logo md"></a>
+            <a class="navbar-brand" href="<?php echo esc_url(home_url()); ?>"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo/logo-sm.png" alt="logo" class="logo"></a>
 
             <!-- Offcanvas Navbar -->
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-navbar">
