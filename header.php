@@ -43,7 +43,7 @@
 
         <nav id="nav-main" class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-          <div class="container">
+          <div class="container-fluid">
 
             <!-- Navbar Brand -->
             <a class="navbar-brand" href="<?php echo esc_url(home_url()); ?>"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo/logo.png" alt="logo" class="logo"></a>
