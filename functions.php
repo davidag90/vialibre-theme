@@ -33,8 +33,8 @@ function add_frontpage_highlight_column($columns)
 
 add_filter('manage_edit-page_columns', 'add_frontpage_highlight_column', 10, 1);
 
-function frontpage_highlight_column_content($column_name, $post_id) {
-	switch($column_name) {
+function frontpage_highlight_column_content($column, $post_id) {
+	switch($column) {
 		case 'destacar-home':
 			$meta = get_field('destacar-home', $post_id);
 			$meta ? 'Destacado' : 'No destacado';
@@ -42,4 +42,4 @@ function frontpage_highlight_column_content($column_name, $post_id) {
 	}
 }
 
-add_action('manage_page_posts_custom_column', 'frontpage_highlight_column_content');
+add_action('manage_page_posts_custom_column', 'frontpage_highlight_column_content', 10, 1);
