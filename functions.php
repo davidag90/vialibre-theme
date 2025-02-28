@@ -31,4 +31,4 @@ function add_frontpage_highlight_column($columns)
 	return array_merge($columns, $new_column);
 }
 
-add_filter('manage_edit-page_columns', 'frontpage_highlight_column', 10, 1);
+add_filter('manage_edit-page_columns', 'add_frontpage_highlight_column', 10, 1);
