@@ -290,6 +290,9 @@ img.logo {
   opacity: 1;
 }
 
-p+h3 {
-  margin-top: 1.5rem;
+p+h2,
+p+h3,
+p+h4,
+p+h5 {
+  margin-top: 2rem;
 }
