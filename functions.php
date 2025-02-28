@@ -33,7 +33,7 @@ function add_frontpage_highlight_column($columns)
 
 add_filter('manage_pages_columns', 'add_frontpage_highlight_column', 10, 1);
 
-function frontpage_highlight_column_content($column, $post_id) {
+function frontpage_highlight_column_content($column, $post_id = 0) {
 	switch($column) {
 		case 'destacar-home':
 			$meta = get_field('destacar-home', $post_id);
