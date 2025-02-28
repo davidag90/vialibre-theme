@@ -25,10 +25,21 @@ function bootscore_child_enqueue_styles()
 function add_frontpage_highlight_column($columns)
 {
 	$new_column = array(
-		"field_6618a2ddaa1ee" => 'Página principal?'
+		"destacar-home" => 'Página principal?'
 	);
 
 	return array_merge($columns, $new_column);
 }
 
 add_filter('manage_edit-page_columns', 'add_frontpage_highlight_column', 10, 1);
+
+function frontpage_highlight_column_content($column_name, $post_id) {
+	switch($column_name) {
+		case 'destacar-home':
+			$meta = get_field('destacar-home');
+			$meta ? 'Destacado' : 'No destacado';
+		break;
+	}
+}
+
+add_action('manage_page_posts_custom_column', 'frontpage_highlight_column_content');
