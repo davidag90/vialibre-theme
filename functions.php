@@ -22,10 +22,11 @@ function bootscore_child_enqueue_styles()
 	wp_enqueue_script('custom-js', get_stylesheet_directory_uri() . '/js/custom.js', false, '', true);
 }
 
-function add_frontpage_highlight_column($columns) {
+function add_frontpage_highlight_column($columns)
+{
 	$new_column = array(
 		"destacar-home" => 'Página principal?'
-	)
+	);
 
 	return array_merge($columns, $new_column);
 }
