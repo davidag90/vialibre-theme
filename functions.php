@@ -25,7 +25,7 @@ function bootscore_child_enqueue_styles()
 function add_frontpage_highlight_column($columns)
 {
 	$new_column = array(
-		"destacar-home" => 'Página principal?'
+		"destacar-home" => 'Destacado'
 	);
 
 	return array_merge($columns, $new_column);
@@ -38,9 +38,9 @@ function frontpage_highlight_column_content($column, $post_id = 0) {
 		case 'destacar-home':
 			$meta = get_field('destacar-home', $post_id);
 			if($meta) {
-				echo 'Destacado';
+				echo 'Sí';
 			} else {
-				echo 'No destacado';
+				echo 'No';
 			}
 		break;
 	}
