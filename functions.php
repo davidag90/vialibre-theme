@@ -33,13 +33,17 @@ function add_frontpage_highlight_column($columns)
 
 add_filter('manage_edit-page_columns', 'add_frontpage_highlight_column', 10, 1);
 
-function frontpage_highlight_column_content($column) {
+function frontpage_highlight_column_content($column, $post_id) {
 	switch($column) {
 		case 'destacar-home':
 			$meta = get_field('destacar-home');
-			$meta ? 'Destacado' : 'No destacado';
+			if($meta) {
+				echo 'Destacado';
+			} else {
+				echo 'No destacado';
+			}
 		break;
 	}
 }
 
-add_action('manage_page_posts_custom_column', 'frontpage_highlight_column_content', 10, 1);
+add_action('manage_pages_custom_column', 'frontpage_highlight_column_content', 10, 1);
