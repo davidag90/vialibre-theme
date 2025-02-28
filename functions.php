@@ -25,7 +25,7 @@ function bootscore_child_enqueue_styles()
 function add_frontpage_highlight_column($columns)
 {
 	$new_column = array(
-		"destacar-home" => 'Página principal?'
+		"field_6618a2ddaa1ee" => 'Página principal?'
 	);
 
 	return array_merge($columns, $new_column);
