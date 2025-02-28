@@ -36,7 +36,7 @@ add_filter('manage_edit-page_columns', 'add_frontpage_highlight_column', 10, 1);
 function frontpage_highlight_column_content($column_name, $post_id) {
 	switch($column_name) {
 		case 'destacar-home':
-			$meta = get_field('destacar-home');
+			$meta = get_field('destacar-home', $post_id);
 			$meta ? 'Destacado' : 'No destacado';
 		break;
 	}
