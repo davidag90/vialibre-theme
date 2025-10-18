@@ -19,7 +19,6 @@
 					$posts = new WP_Query($args);
 
 					if ($posts->have_posts()) :
-						$c = 0;
 						while ($posts->have_posts()) : $posts->the_post(); ?>
 							<div class="owl-slide d-flex align-items-end cover" style="background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full') ?>)">
 								<div class="owl-slide-text w-100 px-3 px-md-5 py-3 mb-5">
@@ -32,7 +31,6 @@
 									</div><!-- .owl-slide-subtitle -->
 								</div><!-- .owl-slide-text -->
 							</div><!-- .owl-slide -->
-							<?php $c++; ?>
 						<?php endwhile; ?>
 					<?php endif; ?>
 
