@@ -1,3 +1,5 @@
 .DS_Store
 css/lib/bootstrap.min.css
 vialibre-theme.code-workspace
+dist-theme.sh
+dist
