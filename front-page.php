@@ -27,7 +27,7 @@
 									</h2><!-- .owl-slide-title -->
 
 									<div class="owl-slide-animated owl-slide-subtitle text-light">
-										<p class="mb-0"><?php echo get_the_excerpt(); ?></p>
+										<p class="mb-0"><?php echo get_field('proxima_fecha'); ?></p>
 									</div><!-- .owl-slide-subtitle -->
 								</div><!-- .owl-slide-text -->
 							</div><!-- .owl-slide -->
