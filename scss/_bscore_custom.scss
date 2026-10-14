@@ -302,3 +302,9 @@ p+h4,
 p+h5 {
   margin-top: 2rem;
 }
+
+// Shortcode [paginas_hijas]
+.child-pages-grid .card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
