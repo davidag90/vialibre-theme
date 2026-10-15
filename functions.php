@@ -7,7 +7,7 @@ function bootscore_child_enqueue_styles()
 	wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
 
 	// Compiled Bootstrap
-	$modified_bootscoreChildCss = date('YmdHi', filemtime(get_parent_theme_file_path() . '/css/main.css'));
+	$modified_bootscoreChildCss = date('YmdHi', filemtime(get_stylesheet_directory() . '/css/main.css'));
 	wp_enqueue_style('main', get_stylesheet_directory_uri() . '/css/main.css', array('parent-style'), $modified_bootscoreChildCss);
 	wp_enqueue_style('owlcarousel-css', get_stylesheet_directory_uri() . '/css/owlcarousel/owl.carousel.min.css');
 	wp_enqueue_style('owlcarousel-theme', get_stylesheet_directory_uri() . '/css/owlcarousel/owl.theme.default.min.css');
